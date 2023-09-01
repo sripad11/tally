@@ -3,7 +3,7 @@
 Fast, buffered, hierarchical stats collection in Go.
 
 ## Installation
-`go get -u github.com/uber-go/tally`
+`go get -u github.com/extrasalt`
 
 ## Abstract
 
@@ -17,10 +17,10 @@ By default it buffers counters, gauges and histograms at a specified interval bu
 - Metrics: Counters, Gauges, Timers and Histograms.
 - Reporter: Implemented by you. Accepts aggregated values from the scope. Forwards the aggregated values to your metrics ingestion pipeline.
   - The reporters already available listed alphabetically are:
-	 - `github.com/uber-go/tally/m3`: Report m3 metrics, timers are not sampled and forwarded directly.
-	 - `github.com/uber-go/tally/multi`: Report to multiple reporters, you can multi-write metrics to other reporters simply.
-	 - `github.com/uber-go/tally/prometheus`: Report prometheus metrics, timers by default are made summaries with an option to make them histograms instead.
-	 - `github.com/uber-go/tally/statsd`: Report statsd metrics, no support for tags.
+	 - `github.com/extrasalt/m3`: Report m3 metrics, timers are not sampled and forwarded directly.
+	 - `github.com/extrasalt/multi`: Report to multiple reporters, you can multi-write metrics to other reporters simply.
+	 - `github.com/extrasalt/prometheus`: Report prometheus metrics, timers by default are made summaries with an option to make them histograms instead.
+	 - `github.com/extrasalt/statsd`: Report statsd metrics, no support for tags.
 
 ### Basics
 
@@ -59,8 +59,8 @@ Use the inbuilt statsd reporter:
 import (
 	"io"
 	"github.com/cactus/go-statsd-client/v5/statsd"
-	"github.com/uber-go/tally"
-	tallystatsd "github.com/uber-go/tally/statsd"
+	"github.com/extrasalt"
+	tallystatsd "github.com/extrasalt/statsd"
 	// ...
 )
 
@@ -202,11 +202,11 @@ BenchmarkTimerReport-8              	300000000	         5.69 ns/op
 
 Released under the [MIT License](LICENSE).
 
-[doc-img]: https://godoc.org/github.com/uber-go/tally?status.svg
-[doc]: https://godoc.org/github.com/uber-go/tally
-[ci-img]: https://travis-ci.org/uber-go/tally.svg?branch=master
-[ci]: https://travis-ci.org/uber-go/tally
-[cov-img]: https://coveralls.io/repos/github/uber-go/tally/badge.svg?branch=master
-[cov]: https://coveralls.io/github/uber-go/tally?branch=master
-[glide.lock]: https://github.com/uber-go/tally/blob/master/glide.lock
-[v1]: https://github.com/uber-go/tally/milestones
+[doc-img]: https://godoc.org/github.com/extrasalt?status.svg
+[doc]: https://godoc.org/github.com/extrasalt
+[ci-img]: https://travis-ci.org/extrasalt.svg?branch=master
+[ci]: https://travis-ci.org/extrasalt
+[cov-img]: https://coveralls.io/repos/github/extrasalt/badge.svg?branch=master
+[cov]: https://coveralls.io/github/extrasalt?branch=master
+[glide.lock]: https://github.com/extrasalt/blob/master/glide.lock
+[v1]: https://github.com/extrasalt/milestones

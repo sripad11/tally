@@ -1,4 +1,4 @@
-module github.com/uber-go/tally/tools
+module github.com/extrasalt/tools
 
 go 1.18
 
