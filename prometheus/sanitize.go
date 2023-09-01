@@ -21,7 +21,7 @@
 package prometheus
 
 import (
-	tally "github.com/uber-go/tally/v4"
+	tally "github.com/extrasalt/tally/v4"
 )
 
 // DefaultSanitizerOpts are the options for the default Prometheus sanitizer.

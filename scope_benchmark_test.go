@@ -160,7 +160,7 @@ func BenchmarkScopeTaggedNoCachedSubscopesParallel(b *testing.B) {
 			value := strconv.Itoa(int(n))
 
 			// Validated that the compiler is not optimizing this with a cpu profiler.
-			// Check https://github.com/uber-go/tally/pull/184 for more details
+			// Check https://github.com/extrasalt/tally/pull/184 for more details
 			root.Tagged(map[string]string{
 				"foo": value,
 				"baz": value,
@@ -204,7 +204,7 @@ func BenchmarkScopeTaggedNoCachedSubscopesParallelPercentageCached(b *testing.B)
 			value := strconv.Itoa(int(n))
 
 			// Validated that the compiler is not optimizing this with a cpu profiler.
-			// Check https://github.com/uber-go/tally/pull/184 for more details
+			// Check https://github.com/extrasalt/tally/pull/184 for more details
 			root.Tagged(map[string]string{
 				"foo": value,
 				"baz": value,
