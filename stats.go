@@ -28,7 +28,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/extrasalt/v4/internal/identity"
+	"github.com/uber-go/tally/v4/internal/identity"
 )
 
 var (

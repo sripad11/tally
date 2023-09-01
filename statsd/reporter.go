@@ -27,7 +27,7 @@ import (
 	"time"
 
 	"github.com/cactus/go-statsd-client/v5/statsd"
-	tally "github.com/extrasalt/v4"
+	tally "github.com/uber-go/tally/v4"
 )
 
 const (
