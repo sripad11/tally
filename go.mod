@@ -9,8 +9,8 @@ require (
 	github.com/prometheus/client_model v0.2.0
 	github.com/stretchr/testify v1.8.0
 	github.com/twmb/murmur3 v1.1.5
+	github.com/uber-go/tally/v4 v4.1.7
 	go.uber.org/atomic v1.7.0
 	go.uber.org/goleak v1.2.1
-	gopkg.in/validator.v2 v2.0.0-20200605151824-2b28d334fa05
-	gopkg.in/yaml.v2 v2.4.0
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 )
