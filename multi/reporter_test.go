@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	tally "github.com/extrasalt/tally/v4"
+	tally "github.com/sripad11/tally/v4"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"time"
 
-	tally "github.com/extrasalt/tally/v4"
+	tally "github.com/sripad11/tally/v4"
 )
 
 type printStatsReporter struct{}

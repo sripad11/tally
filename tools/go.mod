@@ -1,4 +1,4 @@
-module github.com/extrasalt/tally/tools
+module github.com/sripad11/tally/tools
 
 go 1.18
 

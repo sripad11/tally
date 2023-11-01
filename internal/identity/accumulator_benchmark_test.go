@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/extrasalt/tally/v4/internal/identity"
+	"github.com/sripad11/tally/v4/internal/identity"
 )
 
 func BenchmarkAccumulator_StringStringMap(b *testing.B) {

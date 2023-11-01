@@ -26,8 +26,8 @@ import (
 	"time"
 
 	"github.com/cactus/go-statsd-client/v5/statsd"
-	tally "github.com/extrasalt/tally/v4"
-	statsdreporter "github.com/extrasalt/tally/v4/statsd"
+	tally "github.com/sripad11/tally/v4"
+	statsdreporter "github.com/sripad11/tally/v4/statsd"
 )
 
 // To view statsd emitted metrics locally you can use

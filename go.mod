@@ -1,4 +1,4 @@
-module github.com/extrasalt/tally/v4
+module github.com/sripad11/tally/v4
 
 go 1.15
 

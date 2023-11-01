@@ -26,10 +26,10 @@ import (
 	"sync"
 	"time"
 
-	tally "github.com/extrasalt/tally/v4"
 	"github.com/pkg/errors"
 	prom "github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	tally "github.com/sripad11/tally/v4"
 )
 
 const (

@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	tally "github.com/extrasalt/tally/v4"
 	prom "github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
+	tally "github.com/sripad11/tally/v4"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

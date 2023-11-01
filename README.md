@@ -3,7 +3,7 @@
 Fast, buffered, hierarchical stats collection in Go.
 
 ## Installation
-`go get -u github.com/extrasalt/tally`
+`go get -u github.com/sripad11/tally`
 
 ## Abstract
 
@@ -17,10 +17,10 @@ By default it buffers counters, gauges and histograms at a specified interval bu
 - Metrics: Counters, Gauges, Timers and Histograms.
 - Reporter: Implemented by you. Accepts aggregated values from the scope. Forwards the aggregated values to your metrics ingestion pipeline.
   - The reporters already available listed alphabetically are:
-	 - `github.com/extrasalt/tally/m3`: Report m3 metrics, timers are not sampled and forwarded directly.
-	 - `github.com/extrasalt/tally/multi`: Report to multiple reporters, you can multi-write metrics to other reporters simply.
-	 - `github.com/extrasalt/tally/prometheus`: Report prometheus metrics, timers by default are made summaries with an option to make them histograms instead.
-	 - `github.com/extrasalt/tally/statsd`: Report statsd metrics, no support for tags.
+	 - `github.com/sripad11/tally/m3`: Report m3 metrics, timers are not sampled and forwarded directly.
+	 - `github.com/sripad11/tally/multi`: Report to multiple reporters, you can multi-write metrics to other reporters simply.
+	 - `github.com/sripad11/tally/prometheus`: Report prometheus metrics, timers by default are made summaries with an option to make them histograms instead.
+	 - `github.com/sripad11/tally/statsd`: Report statsd metrics, no support for tags.
 
 ### Basics
 
@@ -59,8 +59,8 @@ Use the inbuilt statsd reporter:
 import (
 	"io"
 	"github.com/cactus/go-statsd-client/v5/statsd"
-	"github.com/extrasalt/tally"
-	tallystatsd "github.com/extrasalt/tally/statsd"
+	"github.com/sripad11/tally"
+	tallystatsd "github.com/sripad11/tally/statsd"
 	// ...
 )
 
@@ -202,11 +202,11 @@ BenchmarkTimerReport-8              	300000000	         5.69 ns/op
 
 Released under the [MIT License](LICENSE).
 
-[doc-img]: https://godoc.org/github.com/extrasalt/tally?status.svg
-[doc]: https://godoc.org/github.com/extrasalt/tally
-[ci-img]: https://travis-ci.org/extrasalt/tally.svg?branch=master
-[ci]: https://travis-ci.org/extrasalt/tally
-[cov-img]: https://coveralls.io/repos/github/extrasalt/tally/badge.svg?branch=master
-[cov]: https://coveralls.io/github/extrasalt/tally?branch=master
-[glide.lock]: https://github.com/extrasalt/tally/blob/master/glide.lock
-[v1]: https://github.com/extrasalt/tally/milestones
+[doc-img]: https://godoc.org/github.com/sripad11/tally?status.svg
+[doc]: https://godoc.org/github.com/sripad11/tally
+[ci-img]: https://travis-ci.org/sripad11/tally.svg?branch=master
+[ci]: https://travis-ci.org/sripad11/tally
+[cov-img]: https://coveralls.io/repos/github/sripad11/tally/badge.svg?branch=master
+[cov]: https://coveralls.io/github/sripad11/tally?branch=master
+[glide.lock]: https://github.com/sripad11/tally/blob/master/glide.lock
+[v1]: https://github.com/sripad11/tally/milestones
